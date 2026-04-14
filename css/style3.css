@@ -1,0 +1,85 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nền trang */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #08535e, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Khung form */
+form {
+    background: rgb(255, 255, 255);
+    padding: 25px 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Tiêu đề */
+h2 {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    color: #333;
+}
+
+/* Input, select, textarea */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/* Hiệu ứng focus */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+/* Radio + checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Nút đăng ký */
+button[type="submit"] {
+    background-color: #4facfe;
+    color: white;
+}
+
+/* Nút reset */
+button[type="reset"] {
+    background-color: #ccc;
+}
+
+/* Hover */
+button:hover {
+    opacity: 0.8;
+}
