@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 50%;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid rgb(197, 115, 115);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #1e9bcc;
+}
+
+.left {
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
