@@ -1,7 +1,42 @@
-<form id=" frmIncc">
-    <label>Nhập bảng cửu chương:</label>
-    <input type = "text" id = "txtSo" value="10">
-    <input type="button" onclick=" Inbangcc();">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Cửu Chương</title>
+    <link rel="stylesheet" href="../css/style5.css">
+</head>
+<body>
 
-</form>
-<script src="../js/bcc.js.js"><</script>
+<h2>Bảng cửu chương</h2>
+
+<div class="box">
+    <input type="text" id ="so">
+    <button onclick="inBang()">In</button>
+
+    <p id="kq"></p>
+</div>
+<script>
+function la_so(x) {
+    return !isNaN(x) && x != "";
+}
+
+function inBang() {
+    let n = document.getElementById("so").value;
+
+    if (!la_so(n)) {
+        document.getElementById("kq").innerHTML = "Nhập số!";
+        return;
+    }
+
+    let kq = "";
+    for (let i = 1; i <= 10; i++) {
+        kq += n + " x " + i + " = " + (n * i) + "<br>";
+    }
+
+    document.getElementById("kq").innerHTML = kq;
+}
+</script>
+<script src="../js/lib.js.js"><</script>
+</body>
+</html>
+

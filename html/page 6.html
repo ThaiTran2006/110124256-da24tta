@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bán Hoa</title>
+    <link rel="stylesheet" href="../css/style61.css">
+</head>
+<body>
+
+    <!-- Container để chứa các sản phẩm được tạo từ JS -->
+    <div id="product-container"></div>
+
+    <script>
+        // 1. Khai báo và tạo node div cha có class là product-item
+        const productItem = document.createElement("div");
+        productItem.setAttribute("class", "product-item");
+
+        // 2. Tạo khung chứa ảnh (div1)
+        const productDiv1 = document.createElement("div");
+        productDiv1.setAttribute("class", "product-image");
+
+        // Tạo hình và gán vào div1
+        const productImage = document.createElement("img");
+        productImage.setAttribute("src", "https://hoayeuthuong.com/hinh-hoa-chinh/hoa-chuc-mung/5449_keep-loving-you.jpg");
+        productImage.setAttribute("alt", "Hạt giống hoa hồng Pháp");
+        productDiv1.appendChild(productImage);
+
+        // 3. Tạo khung chứa thông tin (div2)
+        const productDiv2 = document.createElement("div");
+        productDiv2.setAttribute("class", "product-info");
+
+        // Tạo Tên sản phẩm (p)
+        const productName = document.createElement("p");
+        const productNameText = document.createTextNode("Giống hoa hồng Pháp");
+        productName.appendChild(productNameText);
+
+        // Tạo Giá sản phẩm (p)
+        const productPrice = document.createElement("p");
+        const productPriceText = document.createTextNode("250.000 / túi");
+        productPrice.appendChild(productPriceText);
+
+        // Tạo Liên kết (a)
+        const productLink = document.createElement("a");
+        const productLinkText = document.createTextNode("Xem chi tiết");
+        productLink.appendChild(productLinkText);
+        productLink.setAttribute("href", "#");
+
+        // Gán các thành phần vào div2
+        productDiv2.appendChild(productName);
+        productDiv2.appendChild(productPrice);
+        productDiv2.appendChild(productLink);
+
+        // 4. Gán div1 và div2 vào item cha
+        productItem.appendChild(productDiv1);
+        productItem.appendChild(productDiv2);
+
+        // 5. Cuối cùng, gán productItem vào body hoặc container
+        document.body.appendChild(productItem);
+    </script>
+    <script src="../js/lib.js.js"><</script>
+</body>
+</html>
