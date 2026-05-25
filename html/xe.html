@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moto Rental</title>
-    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="../css/xe.css">
+     <link rel="stylesheet" href="../js/xe.js">
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -14,7 +16,7 @@
 
         <nav>
             <a href="#">Trang chủ</a>
-            <a href="#">Xe </a>
+            <a href="#">Xe</a>
             <a href="#">Giá thuê</a>
             <a href="#">Liên hệ</a>
         </nav>
@@ -25,7 +27,7 @@
         <div class="hero-content">
             <h1>Thuê Moto Cao Cấp</h1>
             <p>Trải nghiệm tốc độ và phong cách với các dòng xe mới nhất.</p>
-            <button>Thuê ngay</button>
+            <button id="rentBtn">Thuê ngay</button>
         </div>
     </section>
 
@@ -37,27 +39,29 @@
         <div class="product-list">
 
             <div class="card">
-                <img src="images/moto1.jpg" alt="">
-                <h3>Yamaha Ex 135(2010)</h3>
+                <img 
+                src="../assets/images/moto1.jpg" 
+                alt="Yamaha Ex 135">
+                <h3>Yamaha Ex 135 (2010)</h3>
                 <p>150cc - Mạnh mẽ</p>
                 <span>150.000đ/ngày</span>
-                <button>Đặt xe</button>
+                <button class="bookBtn">Đặt xe</button>
             </div>
 
             <div class="card">
-                <img src="images/moto2.jpg" alt="">
+                <img src="../assets/images/moto2.jpg" alt="Honda Winner V1">
                 <h3>Honda Winner V1</h3>
                 <p>150cc - Mạnh mẽ</p>
                 <span>150.000đ/ngày</span>
-                <button>Đặt xe</button>
+                <button class="bookBtn">Đặt xe</button>
             </div>
 
             <div class="card">
-                <img src="images/moto1.jpg" alt="">
-                <h3>Yamaha Ex 150 </h3>
+                <img src="../assets/images/moto3.jpg" alt="Yamaha Ex 150">
+                <h3>Yamaha Ex 150</h3>
                 <p>150cc - Racing</p>
                 <span>150.000đ/ngày</span>
-                <button>Đặt xe</button>
+                <button class="bookBtn">Đặt xe</button>
             </div>
 
         </div>
@@ -65,10 +69,11 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Moto . All rights reserved.</p>
+        <p>© 2026 Moto. All rights reserved.</p>
     </footer>
 
-    </script>
-       <script src="../js/lib.js.js"><</script>
+    <!-- LINK FILE JS -->
+    <script src="script.js"></script>
+
 </body>
 </html>
